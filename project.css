@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/*HEADER SECTION*/
+header{
+    width: 100vw;
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    z-index: 1000;
+}
+header .search {
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .search button{
+    background-color: transparent;
+    border: none;
+}
+header .search button img{
+    height: 15px;
+    width: 15px;
+}
+header .logo{
+    height: 70px;
+    width: none;
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header .logo h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+header .logo h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+}
+header .user{
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .user .ids img{
+    height: 15px;
+    width: 15px;
+}
+/*HEADER IS DONE*/
+
+/*NAVBAR SECTION*/
+nav{
+    width: 100vw;
+    height: 40px;
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px gray;
+    overflow: hidden;
+    z-index: 1001;
+}
+nav ul{
+    height: 100%;
+    max-width: 700px;
+    min-width: 380px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav ul a{
+    background-color: transparent;
+    text-decoration: none;
+}
+nav ul a li{
+    list-style: none;
+    margin: 5px;
+}
+nav ul a li h1{
+    color: #000;
+    font-size: 10px;
+    font-weight: 100;
+}
+/*NAVBAR SECTION IS DONE*/
+
+/*LOGIN PAGE SECTION*/
+#loginpage{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.721);
+    backdrop-filter: blur(10px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#loginpage .container{
+    height: 300px;
+    width: 380px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#loginpage .container input{
+    height: 20px;
+    width: 280px;
+}
+#loginpage .container h1{
+    font-size: 14px;
+    font-weight: 100;
+}
+#loginpage .container button{
+    height: 30px;
+    width: 280px;
+    background-color: rgb(210, 3, 210);
+    border: none;
+    border-radius: 5px;
+}
+/*LOGIN PAGE SECTION IS DONE*/
+
+/*HOME PAGE SECTION*/
+#homepage{
+    width: 100vw;
+    height: 80vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#homepage .slog{
+    position: absolute;
+    bottom: 30px;
+    background-color: transparent;
+    height: none;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+#homepage .slog h1{
+    font-size: 10px;
+    font-weight: 100;
+    color: #fff;
+}
+#homepage .slog h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+/*HOME PAGE SECTION IS DONE*/
+
+/*PRODUCT SECTION*/
+#products{
+    position: static;
+    top: 0px;
+    width: 100vw;
+    height: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: transparent;
+}
+#products .namesection{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#products .namesection h1{
+    font-weight: 50;
+    font-size: 30px;
+}
+#products a{
+    text-decoration: none;
+    color: #000;
+}
+#products a #item{
+    background-color: transparent;
+    height: 360px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 2px;
+}
+#products #item .imga{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    /*background: linear-gradient(skyblue, white);
+    background-color: skyblue;*/
+    background-image: url(pexels-hngstrm-1939485.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+#products #item .imga img{
+    width: 85%;
+    height: 85%;
+    background-color: transparent;
+}
+#products #item h1{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+/*PRODUCT HOWER EFFECT*/
+#products:hover #item{
+    filter: grayscale(0) blur(0px);
+    z-index: 100;
+}
+#products:hover #item:hover{
+    filter: none;
+    transform: scale(1.05);
+    z-index: 1000;
+    position: relative;
+}
+#catagoitem{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100vw;
+    height: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#catagoitem .backgpho{
+    width: 100vw;
+    height: none;
+    overflow: hidden;
+    /*background-image: url(GettyImages-1485691254.webp);
+    background-size: cover;*/
+}
+#catagoitem .itemjusti{
+    width: 100%;
+    height: 70px;
+    margin: 20px 0px 20px 0px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#catagoitem .itemjusti h1{
+    font-size: 10px;
+    font-weight: 100;
+}
+#catagoitem .itemjusti h2{
+    font-size: 30px;
+    font-weight: 100;
+}
+/*THE BUYING TIEM*/
+#catagoitem .mensproduct{
+    background-color: transparent;
+    width: 100%;
+    height: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+#catagoitem .mensproduct a #iteman{
+    background-color: transparent;
+    height: 360px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 2px;
+    position: relative;
+}
+#catagoitem .mensproduct a #iteman .imga{
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+    background: linear-gradient(skyblue, white);
+    background-image: url(studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product-plain-studio-background_1258-54491.avif);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+}
+#catagoitem .mensproduct a #iteman .imga img{
+    width: auto;
+    height: 85%;
+    background-color: transparent;
+}
+#catagoitem .mensproduct a #iteman .detaila{
+    width: 100%;
+    height: 15%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    gap: 5px;
+}
+#catagoitem .mensproduct a #iteman .detaila #productname{
+    width: 100%;
+}
+#catagoitem .mensproduct a #iteman .detaila #productname h1{
+    background-color: transparent;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 100;
+}
+#catagoitem .mensproduct a #iteman .detaila #price{
+    width: 100%;
+}
+#catagoitem .mensproduct a #iteman .detaila #price h2{
+    background-color: transparent;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 100;
+}
+#catagoitem .mensproduct a #iteman:hover .imga img{
+    animation: run 0.5s;
+}
+@keyframes run {
+    0%{
+       scale: 1; 
+    }
+    50%{
+        scale: 1.05;
+    }
+    100%{
+       scale: 1; 
+    }
+}
+/*the buying item is done*/
+/*THE EXPLORING BUTTON*/
+#catagoitem .expobutton{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0px 0px 0px;
+}
+#catagoitem .expobutton a{
+    text-decoration: none;
+}
+#catagoitem .expobutton a .khoj{
+    height: 45px;
+    width: 180px;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5px;
+}
+#catagoitem .expobutton a .khoj h1{
+    font-size: 14px;
+    font-weight: 300;
+}
+/*PRODUCT SECTION IS DONE*/
+
+/*FOOTER SECTION*/
+footer{
+    width: 100vw;
+    height: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer #buttons{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: space-evenly;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 35px;
+}
+footer #buttons #thebutton{
+    background-color: transparent;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+footer #buttons #thebutton h1{
+    font-size: 8px;
+    font-weight: 100;
+}
+footer #buttons #thebutton h2{
+    font-size: 10px;
+    font-weight: 100;
+}
+footer #buttons #thebutton a{
+    text-decoration: none;
+}
+footer #buttons #thebutton a h2{
+    font-weight: 100;
+    font-size: 10px;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+footer .socialhandls{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer .socialhandls .links{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+footer .socialhandls .links img{
+    height: 80%;
+    width: 80%;
+    transition: 0.3s;
+}
+footer .socialhandls .links:hover img{
+    scale: 1.2;
+}
+footer .brandname{
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+   /* position: absolute;
+    bottom: 0px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 5px 0px;
+    padding: 50px 0px 50px 0px;
+}
+footer .brandname h1{
+    font-size: 35px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+/*FOOTER SECTION IS DONE*/
