@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+/*HEADER SECTION*/
+header{
+    width: 100vw;
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0px;
+    z-index: 1000;
+}
+header .home {
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .home a{
+    background-color: transparent;
+    border: none;
+}
+header .home a img{
+    height: 15px;
+    width: 15px;
+}
+header .logo{
+    height: 70px;
+    width: none;
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header .logo h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+header .logo h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+}
+header .user{
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .user .ids img{
+    height: 15px;
+    width: 15px;
+}
+/*HEADER IS DONE*/
+
+#benner{
+   height: auto;
+   width: 100vw;
+   padding-top: 70px;
+   background-color: transparent;
+   position: sticky;
+   top: 0px;
+   z-index: 998;
+}
+#benner img{
+    width: 100%;
+}
+#pera{
+    min-height: ;
+    width: 100vw;
+    background-color: red;
+    position: relative;
+    z-index: 999;
+}
+#pera h1{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 5px 0px;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 200;
+}
+#pera p{
+    min-height: 500px;
+    min-width: 50%;
+    background: rgba(0, 0, 0, 0.557);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 20px;
+    color: #fff;
+    mix-blend-mode: difference;
+    position: absolute;
+}
