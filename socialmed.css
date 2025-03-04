@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/*HEADER SECTION*/
+header{
+    width: 100vw;
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0px;
+    z-index: 1000;
+}
+header .home {
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .home a{
+    background-color: transparent;
+    border: none;
+}
+header .home a img{
+    height: 15px;
+    width: 15px;
+}
+header .logo{
+    height: 70px;
+    width: none;
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header .logo h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+header .logo h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+}
+header .user{
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .user .ids img{
+    height: 15px;
+    width: 15px;
+}
+/*HEADER IS DONE*/
+/*SOCHIALMEDIA SECTION*/
+#socialchannels{
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    padding-top: 80px;
+}
+#socialchannels a{
+    text-decoration: none;
+}
+#socialchannels a .item{
+    height: 280px;
+    width: 220px;
+    background-color: transparent;
+    margin: 20px;
+    overflow: hidden;
+}
+#socialchannels a .item .imagea{
+    width: 100%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#socialchannels a .item .imagea img{
+    width: 80%;
+}
+#socialchannels a .item .name{
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#socialchannels a .item .name h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+/*FOOTER SECTION*/
+footer{
+    width: 100vw;
+    height: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+footer #buttons{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: space-evenly;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 35px;
+}
+footer #buttons #thebutton{
+    background-color: transparent;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+footer #buttons #thebutton h1{
+    font-size: 8px;
+    font-weight: 100;
+}
+footer #buttons #thebutton h2{
+    font-size: 10px;
+    font-weight: 100;
+}
+footer #buttons #thebutton a{
+    text-decoration: none;
+}
+footer #buttons #thebutton a h2{
+    font-weight: 100;
+    font-size: 10px;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+footer .socialhandls{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer .socialhandls .links{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+footer .socialhandls .links img{
+    height: 80%;
+    width: 80%;
+    transition: 0.3s;
+}
+footer .socialhandls .links:hover img{
+    scale: 1.2;
+}
+footer .brandname{
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+   /* position: absolute;
+    bottom: 0px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 5px 0px;
+    padding: 50px 0px 50px 0px;
+}
+footer .brandname h1{
+    font-size: 35px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+/*FOOTER SECTION IS DONE*/
