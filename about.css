@@ -83,15 +83,15 @@ header .user .ids img{
    background-color: transparent;
    position: sticky;
    top: 0px;
-   z-index: 998;
+   z-index: 98;
 }
 #benner img{
     width: 100%;
 }
 #pera{
-    min-height: ;
+    min-height: auto;
     width: 100vw;
-    background-color: red;
+    background-color: transparent;
     position: relative;
     z-index: 999;
 }
@@ -106,16 +106,152 @@ header .user .ids img{
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     font-weight: 200;
+    text-align: center;
 }
 #pera p{
     min-height: 500px;
     min-width: 50%;
-    background: rgba(0, 0, 0, 0.557);
+    background: rgba(0, 0, 0, 0.542);
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     font-weight: 100;
     padding: 20px;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     mix-blend-mode: difference;
-    position: absolute;
+    text-align: center;
 }
+#pnggup{
+    width: 100vw;
+    height: 80vh;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 999;
+}
+#pnggup .imga{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(135, 207, 235, 0.551);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pnggup .imga img{
+    height: 80%;
+    width: auto;
+}
+#pnggup .texta{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.574);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+#pnggup .texta h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+}
+
+/*FOOTER SECTION*/
+footer{
+    width: 100vw;
+    height: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 999;
+}
+footer #buttons{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: space-evenly;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 35px;
+}
+footer #buttons #thebutton{
+    background-color: transparent;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+footer #buttons #thebutton h1{
+    font-size: 8px;
+    font-weight: 100;
+}
+footer #buttons #thebutton h2{
+    font-size: 10px;
+    font-weight: 100;
+}
+footer #buttons #thebutton a{
+    text-decoration: none;
+}
+footer #buttons #thebutton a h2{
+    font-weight: 100;
+    font-size: 10px;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+footer .socialhandls{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer .socialhandls .links{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+footer .socialhandls .links img{
+    height: 80%;
+    width: 80%;
+    transition: 0.3s;
+}
+footer .socialhandls .links:hover img{
+    scale: 1.2;
+}
+footer .brandname{
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+   /* position: absolute;
+    bottom: 0px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 5px 0px;
+    padding: 50px 0px 50px 0px;
+}
+footer .brandname h1{
+    font-size: 35px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+/*FOOTER SECTION IS DONE*/
