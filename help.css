@@ -84,10 +84,13 @@ header .user .ids img{
     min-height: 90vh;
     padding: 10px;
     width: 100vw;
+    gap: 10px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
+
 .back .item{
     height: 80vh;
     width: 380px;
@@ -162,6 +165,26 @@ header .user .ids img{
     width: 100%;
 }
 /*THE MAIN BODY SECTION IS DONE HERE*/
+@media screen and (max-width: 400px) {
+    .back{
+       flex-direction: column;
+    }
+    .back .item{
+        height: 30vh;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        background-color: rgb(152, 152, 152);
+    }
+    .back .item img{
+        height: 100%;
+        width: auto;
+    }
+    .back .item:nth-child(2){
+        width: 300px;
+    }
+  }
 /*FOOTER SECTION*/
 footer{
     position: relative;
