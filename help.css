@@ -95,6 +95,7 @@ header .user .ids img{
     height: 80vh;
     width: 380px;
     overflow: hidden;
+    background-color: rgb(152, 152, 152);
 }
 .back .item:nth-child(2){
     background-color: rgb(12, 0, 99);
