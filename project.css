@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-align: center;
     box-sizing: border-box;
 }
 html,
@@ -34,11 +35,11 @@ header .search {
     align-items: center;
     justify-content: center;
 }
-header .search button{
+header .search a .searchinpa{
     background-color: transparent;
     border: none;
 }
-header .search button img{
+header .search a .searchinpa img{
     height: 15px;
     width: 15px;
 }
@@ -115,58 +116,23 @@ nav ul a li h1{
 }
 /*NAVBAR SECTION IS DONE*/
 
-/*LOGIN PAGE SECTION*/
-#loginpage{
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0px;
-    background: rgba(0, 0, 0, 0.721);
-    backdrop-filter: blur(10px);
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-#loginpage .container{
-    height: 300px;
-    width: 380px;
-    background-color: #fff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-#loginpage .container input{
-    height: 20px;
-    width: 280px;
-}
-#loginpage .container h1{
-    font-size: 14px;
-    font-weight: 100;
-}
-#loginpage .container button{
-    height: 30px;
-    width: 280px;
-    background-color: rgb(210, 3, 210);
-    border: none;
-    border-radius: 5px;
-}
-/*LOGIN PAGE SECTION IS DONE*/
-
 /*HOME PAGE SECTION*/
 #homepage{
     width: 100vw;
     height: 80vh;
+    position: relative;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
+#homepage video{
+    position: absolute;
+}
 #homepage .slog{
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     background-color: transparent;
     height: none;
     width: 300px;
@@ -209,6 +175,7 @@ nav ul a li h1{
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    text-align: center;
 }
 #products .namesection h1{
     font-weight: 50;
