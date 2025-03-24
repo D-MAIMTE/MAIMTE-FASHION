@@ -20,7 +20,7 @@ header{
     width: 100vw;
     height: 70px;
     background-color: #fff;
-    border-bottom: 1px solid gray;
+    border-bottom: solid black 0.5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,11 +35,11 @@ header .search {
     align-items: center;
     justify-content: center;
 }
-header .search a .searchinpa{
+header .search .searchinpa{
     background-color: transparent;
     border: none;
 }
-header .search a .searchinpa img{
+header .search .searchinpa img{
     height: 15px;
     width: 15px;
 }
@@ -53,10 +53,8 @@ header .logo{
     align-items: center;
     justify-content: center;
 }
-header .logo h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: 300;
+header .logo img{
+   height: 30px;
 }
 header .logo h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -88,7 +86,7 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border-bottom: solid 1px gray;
+    border-bottom: solid black 0.5px;
     overflow: hidden;
     z-index: 1001;
 }
@@ -165,7 +163,7 @@ nav ul a li h1{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     background-color: transparent;
 }
 #products .namesection{
@@ -184,11 +182,15 @@ nav ul a li h1{
 #products a{
     text-decoration: none;
     color: #000;
+    overflow: hidden;
+    position: relative;
 }
 #products a #item{
     background-color: transparent;
-    height: 360px;
-    width: 260px;
+    background-image: url(pexels-hngstrm-1939485.jpg);
+    background-size: cover;
+    height: 380px;
+    width: 320px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -196,14 +198,27 @@ nav ul a li h1{
     transition: 0.5s;
     margin: 2px;
 }
+#products a #item .shine{
+    position: absolute;
+    height: 500px;
+    width: 0px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: #fff 5px 5px 15px 5px;
+    transition: 0.5s;
+    z-index: 1000;
+    transform: rotate(40deg) translateY(-30%) translateX(-200px);
+}
+
 #products #item .imga{
     width: 100%;
     height: 90%;
     overflow: hidden;
     /*background: linear-gradient(skyblue, white);
     background-color: skyblue;*/
-    background-image: url(pexels-hngstrm-1939485.jpg);
-    background-size: cover;
+    
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,6 +228,7 @@ nav ul a li h1{
     width: 85%;
     height: 85%;
     background-color: transparent;
+    transition: 0.5s;
 }
 #products #item h1{
     width: 100%;
@@ -226,15 +242,14 @@ nav ul a li h1{
 }
 
 /*PRODUCT HOWER EFFECT*/
-#products:hover #item{
-    filter: grayscale(0) blur(0px);
-    z-index: 100;
-}
-#products:hover #item:hover{
-    filter: none;
-    transform: scale(1.05);
-    z-index: 1000;
-    position: relative;
+
+#products #item:hover{
+    img{
+        transform: scale(1.1);
+    }
+    .shine{
+        transform: rotate(40deg) translateY(-30%) translateX(400px);
+    }
 }
 #catagoitem{
     margin-top: 50px;
