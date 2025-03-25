@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,
+        body{
+            background-color: rgb(234, 234, 234);
+        }
+        
+/*HEADER SECTION*/
+header{
+    width: 100vw;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0px;
+    z-index: 1000;
+}
+header .home {
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .home a{
+    background-color: transparent;
+    border: none;
+}
+header .home a img{
+    height: 15px;
+    width: 15px;
+}
+header .search{
+    height: 70px;
+    width: none;
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .search .row{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+header .search .row input{
+    flex: 1;
+    height: 25px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+}
+header .search .row button{
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .search .row button img{
+    width: 80%;
+    height: 80%;
+}
+header .search .resultbox{
+    height: auto;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    padding: 10px;
+}
+header .search .resultbox ul{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+header .search .resultbox ul a{
+    text-decoration: none;
+    padding: 3px;
+}
+header .search .resultbox ul a li{
+    list-style: none;
+}
+header .search .resultbox ul a li h1{
+    color: black;
+    font-size: 15px;
+}
+header .search .resultbox ul a:hover{
+    background-color: #e9f3ff;
+}
+header .user{
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .user .ids img{
+    height: 15px;
+    width: 15px;
+}
+/*HEADER IS DONE*/
+    </style>
+</head>
+<body>
+        <!--HEADER-SECTION-->
+     <header>
+        <div class="home"><a href="index.html"><img src="home-line.png" alt=""></a></div>
+        <div class="search">
+            <div class="row">
+            <input type="text" id="input-box" placeholder="search" autocomplete="off">
+            <button><img src="search-2-line.png" alt=""></button>
+            </div>
+            <div class="resultbox">
+                <ul>
+                    <a href="womenhandbag.html"><li><h1>Women's Handbags</h1></li></a>
+                    <a href="womenwallates.html"><li><h1>Women's Wallets</h1></li></a>
+                    <a href="Perfumes.html"><li><h1>Perfumes</h1></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="user"><a href="#"><div class="ids"><img src="user-line.png" alt=""></div></a></div>
+    </header>
+    <!--HEADER IS DONE-->
+    
+</body>
+</html>
