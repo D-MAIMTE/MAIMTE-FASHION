@@ -237,6 +237,8 @@ nav ul a li h1{
     font-weight: 100;
     font-size: 12px;
     background-color: transparent;
+    position: absolute;
+    bottom: 0px;
 }
 
 /*PRODUCT HOWER EFFECT*/
@@ -558,7 +560,6 @@ footer .brandname h1{
     #products #item h1{
         height: 20%;
         background-color: transparent;
-        display: block;
     }
  }
  /**
