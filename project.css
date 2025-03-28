@@ -557,6 +557,8 @@ footer .brandname h1{
     }
     #products #item h1{
         height: 20%;
+        background-color: transparent;
+        display: block;
     }
  }
  /**
