@@ -390,17 +390,47 @@ nav ul a li h1{
 #catagoitem .expobutton a .khoj{
     height: 45px;
     width: 180px;
-    border: 1px solid black;
+    
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     padding: 5px;
+    z-index: 990;
 }
+#catagoitem .expobutton a .khoj::before{
+    content: "";
+    border-radius: 50px;
+    height: 80%;
+    width: 80%;
+    background-color: rgb(207, 207, 207);
+    position: absolute;
+    z-index: 980;
+    transition: 0.3s ease;
+}
+#catagoitem .expobutton a .khoj::after{
+    content: "";
+    border-radius: 50px;
+    height: 90%;
+    width: 90%;
+    background-color: transparent;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 980;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+#catagoitem .expobutton a:hover .khoj::after{
+   opacity: 1;
+}
+#catagoitem .expobutton a:hover .khoj::before{
+    opacity: 0;
+ }
 #catagoitem .expobutton a .khoj h1{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
+    z-index: 990;
 }
 /*PRODUCT SECTION IS DONE*/
 
@@ -498,6 +528,94 @@ footer .brandname h1{
 /*FOOTER SECTION IS DONE*/
 
 /*THE RESPONSIVE CSS*/
-@media screen {
+/**
+ * responsive for large than 680px screen
+ */
+
+ @media (min-width: 10px) {
+    #products a #item{
+        background-color: transparent;
+        background-image: url(pexels-hngstrm-1939485.jpg);
+        background-size: cover;
+        height: 170px;
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.5s;
+        margin: 2px;
+    }
+ }
+ /**
+ * responsive for large than 790px screen
+ */
+
+ @media (min-width: 790px) {
+    #products a #item{
+        background-color: transparent;
+        background-image: url(pexels-hngstrm-1939485.jpg);
+        background-size: cover;
+        height: 270px;
+        width: 240px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.5s;
+        margin: 2px;
+    }
+ }
+/**
+ * responsive for large than 992px screen
+ */
+
+ @media (min-width: 992px) {
+    #products a #item{
+        background-color: transparent;
+        background-image: url(pexels-hngstrm-1939485.jpg);
+        background-size: cover;
+        height: 280px;
+        width: 220px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.5s;
+        margin: 2px;
+    }
+ }
+  
+  /**
+   * responsive for large than 1200px screen
+   */
+  
+  @media (min-width: 1200px) {
+    #products a #item{
+        background-color: transparent;
+        background-image: url(pexels-hngstrm-1939485.jpg);
+        background-size: cover;
+        height: 340px;
+        width: 280px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.5s;
+        margin: 2px;
+    }
     
-}
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for large than 1400px screen
+   */
+  
+  @media (min-width: 1400px) {
+  
+  }
